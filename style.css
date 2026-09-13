@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: dark;
+  --bg: #080808;
+  --card: #121212;
+  --red: #e50914;
+  --red2: #ff2633;
+  --text: #f5f5f5;
+  --muted: #8d8d8d;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 50% -10%, rgba(229, 9, 20, .22), transparent 38%),
+    var(--bg);
+  color: var(--text);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.app {
+  position: relative;
+  width: min(100%, 520px);
+  min-height: 100vh;
+  margin: auto;
+  padding: 18px 16px 40px;
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  right: -120px;
+  top: 180px;
+  background: rgba(229, 9, 20, .14);
+  filter: blur(70px);
+  pointer-events: none;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 2px 24px;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+.logo span {
+  color: var(--red);
+}
+
+.balance {
+  padding: 9px 13px;
+  border: 1px solid #292929;
+  border-radius: 12px;
+  background: #111;
+  font-weight: 700;
+}
+
+.hero {
+  padding: 42px 20px 34px;
+  text-align: center;
+  border: 1px solid #242424;
+  border-radius: 24px;
+  background: linear-gradient(145deg, #151515, #0d0d0d);
+  box-shadow: 0 18px 60px rgba(0,0,0,.45);
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid rgba(229,9,20,.5);
+  border-radius: 999px;
+  color: #ff5b64;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin: 18px 0 8px;
+  font-size: 32px;
+}
+
+.hero p {
+  margin: 0 0 26px;
+  color: var(--muted);
+}
+
+.primary {
+  width: 100%;
+  border: 0;
+  border-radius: 14px;
+  padding: 16px;
+  color: white;
+  background: linear-gradient(135deg, var(--red), #a50009);
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(229,9,20,.25);
+}
+
+.primary:active {
+  transform: scale(.98);
+}
+
+.games {
+  margin-top: 28px;
+}
+
+.section-title {
+  margin: 0 4px 12px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.game-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid #222;
+  border-radius: 18px;
+  background: var(--card);
+}
+
+.game-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #1d0b0d;
+  font-size: 25px;
+}
+
+.game-card h2 {
+  margin: 0 0 4px;
+  font-size: 17px;
+}
+
+.game-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.soon {
+  margin-left: auto;
+  color: #ff4c56;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
